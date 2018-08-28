@@ -1,6 +1,7 @@
 package Java;
 
 public class Person { // class danh cho mot nguoi
+	private static int id;
 	private String name; // ten 	
 	private String address; // dia chi
 	private int age; // tuoi
@@ -48,13 +49,25 @@ public class Person { // class danh cho mot nguoi
 		System.out.println("\nTen : " + name + "\nDia chi : " + address + "\nTuoi : " + age);;
 	}
 	
+	public static void increase() {
+		id++;
+	}
+	
 	public static void main(String[] args) {
 		Person p1 = new Person("Doreamon","Japan",123); // tao ra mot doi tuong cua class Person
+		p1.setId(2000);
+		System.out.println("id = " + p1.getId());
 		p1.Display();
 		p1.setName("Nobita");
 		p1.setAge(10);
 		p1.Display();
-//		Person p2 = new Person();
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;

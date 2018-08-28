@@ -3,6 +3,7 @@ package Java;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 
+
 public class LocalDateEX {
 	public static void main(String[] args) {
 		LocalDate date = LocalDate.now();
