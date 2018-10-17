@@ -67,7 +67,7 @@ public class Person { // class danh cho mot nguoi
 		return id;
 	}
 	public void setId(int id) {
-		this.id = id;
+		Person.id = id;
 	}
 	public String getName() {
 		return name;
